@@ -1,19 +1,49 @@
 package personal;
 
 public class Maquinista {
-    public String nombre;
-    public String dni;
-    public int sueldo;
-    public int rango;
-public String detalles(){
-    StringBuilder sb = new StringBuilder();//Para en vez de imprimir estos datos, retornarlos como un String y despues imprimirlos en main
-    sb.append("Datos del maqinista " + this.nombre +"\n");
-    sb.append("Maquinista {nombre = " + this.nombre +
+    private String nombre;
+    private String dni;
+    private int sueldo;
+    private int rango;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getSueldo() {
+        return sueldo;
+    }
+
+    public void setSueldo(int sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    public int getRango() {
+        return rango;
+    }
+
+    public void setRango(int rango) {
+        this.rango = rango;
+    }
+
+    public String detalles(){
+    return("Datos del maqinista " + this.nombre +"\n")+
+            ("Maquinista {nombre = " + this.nombre +
                        " " +"dni = " + this.dni+" "
                         +"sueldo = " + this.sueldo+" "
                         +"rango = " + this.rango+"}\n");
-
-    return sb.toString();
     }
 }
 

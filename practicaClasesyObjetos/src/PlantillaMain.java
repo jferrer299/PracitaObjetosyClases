@@ -12,16 +12,16 @@ public class PlantillaMain {
         // dos maquinistas
 
         Maquinista maqui1= new Maquinista();
-            maqui1.nombre = "Pepe";
-            maqui1.dni = "111111111P";
-            maqui1.sueldo = 42000;
-            maqui1.rango = 1;
+            maqui1.setNombre("Pepe");
+            maqui1.setDni("111111111P");
+            maqui1.setSueldo(42000);
+            maqui1.setRango(1);
 
         Maquinista maqui2 = new Maquinista();
-            maqui2.nombre = "Marta";
-            maqui2.dni = "22222222M";
-            maqui2.sueldo = 42000;
-            maqui2.rango = 1;
+            maqui2.setNombre("Marta");
+            maqui2.setDni("22222222M");
+            maqui2.setSueldo(42000);
+            maqui2.setRango(1);
 
         // imprimimos los datos de los dos maquinistas
         System.out.println(maqui1.detalles());
@@ -29,23 +29,23 @@ public class PlantillaMain {
 
         // Creo a los mecánicos
         Mecanico F = new Mecanico();
-            F.nombre= "F.Frenador";
-            F.telefono = 389177612;
+            F.setNombre("F.Frenador");
+            F.setTelefono(389177612);
 
 
         Mecanico H = new Mecanico();
-        H.nombre= "H.Hidráulico";
-        F.telefono = 389177612;
+        H.setNombre("H.Hidráulico");
+        F.setTelefono(389177612);
 
 
         Mecanico E = new Mecanico();
-        E.nombre= "E.Electricista";
-        E.telefono = 12345767;
+        E.setNombre("E.Electricista");
+        E.setTelefono(12345767);
 
 
         Mecanico M = new Mecanico();
-        M.nombre= "M.Motorista";
-        M.telefono = 145125;
+        M.setNombre("M.Motorista");
+        M.setTelefono(145125);
 
 
         //Imprimo a los mecanicos
@@ -56,9 +56,9 @@ public class PlantillaMain {
 
         // Un jefe de estación
         JefeDeEstacion J = new JefeDeEstacion();
-            J.nombre = "El boss";
-            J.dni = "2222222D";
-            J.fechaNombramiento = "2019-12-01";
+            J.setNombre("El boss");
+            J.setDni("2222222D");
+            J.setFechaNombramiento("2019-12-01");
 
         // Imprimimos los datos del jefe de estación
         System.out.println(J.detallesJefe()+"\n");

@@ -1,14 +1,38 @@
 package personal;
 
 public class JefeDeEstacion {
-    public String nombre;
-    public String dni;
-    public String fechaNombramiento;
+    private String nombre;
+    private String dni;
+    private String fechaNombramiento;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getFechaNombramiento() {
+        return fechaNombramiento;
+    }
+
+    public void setFechaNombramiento(String fechaNombramiento) {
+        this.fechaNombramiento = fechaNombramiento;
+    }
+
     public String detallesJefe(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("Datos del jefe de estación " + this.nombre +"\n");
-        sb.append("JefeDeEstación{Nombre ="+" " + this.nombre
+        return ("Datos del jefe de estación " + this.nombre +"\n")+
+                ("JefeDeEstación{Nombre ="+" " + this.nombre
                 + " " + "DNI = "+this.dni + " "+ "fechaNombramiento =" + fechaNombramiento);
-        return sb.toString();
+
     }
 }

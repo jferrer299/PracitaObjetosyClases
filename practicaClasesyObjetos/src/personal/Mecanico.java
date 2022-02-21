@@ -1,14 +1,29 @@
 package personal;
 
 public class Mecanico {
-    public String nombre;
-    public long telefono;
+    private String nombre;
+    private long telefono;
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public long getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(long telefono) {
+        this.telefono = telefono;
+    }
 
     public String detallesMecanicos(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("Datos del mecanico " + this.nombre +"\n");
-        sb.append("Mecánico {Nombre ="+" " + this.nombre
+        return ("Datos del mecanico " + this.nombre +"\n") +
+                ("Mecánico {Nombre ="+" " + this.nombre
                 + " " + "Teléfono = "+this.telefono + " ");
-        return sb.toString();
     }
 }
